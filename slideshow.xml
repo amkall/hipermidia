@@ -1,0 +1,16 @@
+<smil><!--The SMIL file must start with a <smil> tag and end with the </smil> closing tag.-->
+   <head> <!-- SMIL file header, specify meta information in the multimedia presentation-->
+                <meta name="author" content="Disciplina Hipermidia"/>
+                <meta name="title" content="Laboratorio 01"/>
+                <meta name="copyright" content="(c)2019 Carlos de Salles"/>
+   </head>
+   <body>
+                <seq> <!-- Showing photos in sequence, using the <seq> ("sequence") SMIL tag.-->
+                  <img src="fruit.jpg" dur="10s"/>
+                  <img src="organic.jpeg" dur="10s"/>
+                  <img src="salad.jpg" dur="10s"/>
+                  <img src="vegetables.jpeg" dur="10s"/>
+                  <img src="veggie.jpg" dur="10s"/>
+                </seq>
+    </body>
+</smil>

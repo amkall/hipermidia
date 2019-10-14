@@ -1,0 +1,12 @@
+from xml.dom.minidom import parse
+import cv2 as cv
+
+doc = parse('slideshow.xml')
+xml = doc.documentElement
+
+estados = xml.getElementsByTagName('img')
+
+img = cv.imread(estados[0].getAttribute('src'), 1)
+cv.imshow(estados[0].getAttribute('src'), img)
+
+cv.waitKey(0)
